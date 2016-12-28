@@ -1,7 +1,8 @@
 version: '2'
 services:
   app:
-    build: .
-    command: gcc -o myapp main.c
+    image: gcc
+    command: make
+    working_dir: /usr/src/sandbox
     volumes:
-      - ./:/usr/src/myapp
+      - ./:/usr/src/sandbox

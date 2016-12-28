@@ -1,5 +1,6 @@
 FROM gcc
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN gcc -o myapp main.c
-CMD ["./myapp"]
+COPY . /usr/src/sandbox
+WORKDIR /usr/src/sandbox
+RUN gcc -o sandbox main.c
+CMD ["./sandbox"]
+# Not being used
