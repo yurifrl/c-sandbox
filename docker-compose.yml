@@ -1,0 +1,7 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: gcc -o myapp main.c
+    volumes:
+      - ./:/usr/src/myapp
